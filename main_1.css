@@ -12,15 +12,6 @@ body
 	height:100vh;
 	display:flex;
 	align-items:center;
-	justify-content:center;
-}
-
-article
-{
-	width:100vw;
-	height:100vh;
-	display:flex;
-	align-items:center;
 	background:#1d2939;
 	flex-direction:column;
 	justify-content:center;
@@ -32,14 +23,24 @@ article
 	src:url(fonts/ubuntu-text.ttf);
 }
 
-.mobile-container
+.mobile-containerA
 {
 	width:100vw;
-	height:100vh;
 	display:flex;
 	color:#fff;
 	align-items:center;
-	background:#1d2939;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.mobile-containerB
+{
+	width:100vw;
+	height:10vh;
+	padding-top:30px;
+	display:flex;
+	color:#fff;
+	align-items:center;
 	flex-direction:column;
 	justify-content:center;
 }
@@ -106,7 +107,7 @@ img
   	width:220px;
   	height:220px;
   	border:14px solid #0a0b0a;
-  	border-top:14px solid rgba(162, 187, 147, 0.4);
+  	border-top:14px solid rgba(256, 256, 256, 0.7);
   	animation:loaderI 2s linear infinite;
 } 
 
@@ -118,7 +119,6 @@ img
 .title
 {	color:#fff;
 	font-size:27px;
-	margin-top:-170px;
 }
 
 .text
@@ -128,15 +128,8 @@ img
 	letter-spacing:2px;
 }
 
-@media screen and (orientation:portrait)
-{
-	body{
-		display:none;
-	}
-}
-
-/* @media (orientation:landscape){body{flex-direction:row;}}
-@media (orientation: portrait){body{flex-direction:column;}} */
+@media (orientation:landscape){body{flex-direction:column;}}
+@media (orientation: portrait){body{flex-direction:column;}} 
 
 
 
