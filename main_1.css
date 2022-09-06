@@ -1,0 +1,142 @@
+* 
+{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  font-family:ubuntuFS;
+}
+
+body
+{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+article
+{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	background:#1d2939;
+	flex-direction:column;
+	justify-content:center;
+}
+
+@font-face
+{
+	font-family:ubuntuFS;
+	src:url(fonts/ubuntu-text.ttf);
+}
+
+.mobile-container
+{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	color:#fff;
+	align-items:center;
+	background:#1d2939;
+	flex-direction:column;
+	justify-content:center;
+}
+
+img
+{
+	height:auto;
+	max-width:100%;
+}
+
+#backGR
+{
+	width:200px; 
+	height:200px;
+	display:flex;
+	border-radius:100%;
+	background:
+	url(src/image1.gif) no-repeat, /*man*/
+	url(src/image5.png) no-repeat, /*satellite*/
+	url(src/image3.png) no-repeat, /*planet*/
+	url(src/image6.png) repeat-x;  /*stars*/
+	background-size:
+		100px 150px,
+		70px 70px,
+		60px 50px,
+		120px 150px;
+	background-position:  
+    	center center,
+    	300px 110%,
+    	center right,
+    	center right;
+	animation: 6s logo infinite alternate;
+}
+
+@keyframes logo
+{
+  100%
+  	{ 
+    background-position: 
+		center center,
+		-120px 90%,
+		center left,
+	 	-500px 100%;
+	}
+  }
+
+#loaderI, #loaderE
+{ 
+	z-index:1;
+  	width:220px;
+  	height:220px;
+	display:flex;
+	position:absolute;
+	border-radius:100%;
+	align-items:center;
+	justify-content:center;
+	background:rgba(0, 0, 0, 0.1);
+  	animation:loaderI 8s linear infinite;
+} 
+
+#loaderE
+{ 
+	
+  	width:220px;
+  	height:220px;
+  	border:14px solid #0a0b0a;
+  	border-top:14px solid rgba(162, 187, 147, 0.4);
+  	animation:loaderI 2s linear infinite;
+} 
+
+@keyframes loaderI
+{
+  0%{transform: rotate(0deg);} 100%{transform: rotate(360deg);}
+}
+
+.title
+{	color:#fff;
+	font-size:27px;
+	margin-top:-170px;
+}
+
+.text
+{	
+	font-size:13px;
+	color:#ede1c9;
+	letter-spacing:2px;
+}
+
+@media screen and (orientation:portrait)
+{
+	body{
+		display:none;
+	}
+}
+
+/* @media (orientation:landscape){body{flex-direction:row;}}
+@media (orientation: portrait){body{flex-direction:column;}} */
+
+
+
