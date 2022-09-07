@@ -53,8 +53,8 @@ img
 
 #backGR
 {
-	width:200px; 
-	height:200px;
+	width:220px; 
+	height:220px;
 	display:flex;
 	border-radius:100%;
 	background:
@@ -107,7 +107,7 @@ img
   	width:220px;
   	height:220px;
   	border:14px solid #0a0b0a;
-  	border-top:14px solid rgba(256, 256, 256, 0.7);
+  	border-top:14px solid rgba(68, 86, 98, 0.7);
   	animation:loaderI 2s linear infinite;
 } 
 
@@ -117,7 +117,7 @@ img
 }
 
 .title
-{	color:#fff;
+{	color:#ede1c9;
 	font-size:27px;
 }
 
