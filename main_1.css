@@ -107,7 +107,7 @@ img
   	width:220px;
   	height:220px;
   	border:14px solid #0a0b0a;
-  	border-top:14px solid rgba(68, 86, 98, 0.7);
+  	border-top:14px solid #00bcd5;
   	animation:loaderI 2s linear infinite;
 } 
 
