@@ -128,6 +128,27 @@ img
 	letter-spacing:2px;
 }
 
+footer
+{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	color:#fff;
+	font-size:10px;
+	margin-top:600px;
+	position:absolute;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+}
+
+a
+{
+	font-size:10px;
+	color:#00bcd5;
+	text-decoration:none;
+}
+
 @media (orientation:landscape){body{flex-direction:column;}}
 @media (orientation: portrait){body{flex-direction:column;}} 
 
