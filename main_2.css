@@ -1,0 +1,47 @@
+* 
+{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  font-family:ubuntuFS;
+}
+
+body
+{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+    background:url(src/image7.jpg) no-repeat center;
+    background-size:cover;
+}
+
+@font-face
+{
+	font-family:ubuntuFS;
+	src:url(fonts/ubuntu-text.ttf);
+}
+
+.mobile-containerA
+{
+	width:100vw;
+    height:100vh;
+	display:flex;
+	color:#fff;
+    
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+}
+
+a
+{
+	font-size:10px;
+	color:#00bcd5;
+	text-decoration:none;
+}
+
+@media (orientation:landscape){body{flex-direction:column;}}
+@media (orientation: portrait){body{flex-direction:column;}} 
