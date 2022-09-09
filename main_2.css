@@ -3,6 +3,7 @@
   margin:0;
   padding:0;
   overflow:hidden;
+  font-family:stampwriter;
 }
 
 body
@@ -25,16 +26,16 @@ body
 
 @font-face
 {
-	font-family:Campanile;
-	src:url(fonts/MALERMEI.ttf);
+	font-family:stampwriter;
+	src:url(fonts/stampwriter.ttf);
 }
+
 .menu
 {
 	width:100vw;
 	height:100vh;
 	display:flex;
 	align-items:center;
-	font-family:Campanile;
 	flex-direction: column;
 	justify-content: center;
 
@@ -42,8 +43,9 @@ body
 
 .options
 {
-	margin-bottom:10px;
-	transition: 1s;
+	cursor:pointer;
+	transition:1s;
+	text-align:center;
 }
 
 .options:hover
