@@ -3,7 +3,6 @@
   margin:0;
   padding:0;
   overflow:hidden;
-  font-family:ubuntuFS;
 }
 
 body
@@ -24,17 +23,72 @@ body
 	src:url(fonts/ubuntu-text.ttf);
 }
 
+@font-face
+{
+	font-family:Campanile;
+	src:url(fonts/MALERMEI.ttf);
+}
+.menu
+{
+	width:30vw;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	font-family:Campanile;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.options
+{
+	margin-bottom:10px;
+	transition: 1s;
+}
+
+.options:hover
+{
+	font-size:20px;
+}
+
 .mobile-containerA
 {
-	width:100vw;
-    height:100vh;
+	width:30vw;
+	height:100vh;
 	display:flex;
-	color:#fff;
-    
-	align-items:center;
-	flex-direction:column;
-	justify-content:center;
+	background:
+	url(src/image7.png) no-repeat center, /*background*/
+	url(src/image9.gif) no-repeat center, /*music*/
+	url(src/image10.png) no-repeat center, /*chair*/
+	url(src/image8.png) no-repeat center; /*ballon*/
+	background-color: rgba(0, 0, 0, 0.2);
+	background-size:
+	cover,
+	100px 150px,
+	70px 100px,
+	70px 100px;
+		
+	background-position:  
+    	center center,
+		20% 80%,
+		80% 80%,
+	100px 20%;
+    	
+	animation: 6s logo infinite alternate;
+	opacity:0.8;
 }
+
+@keyframes logo
+{
+  100%
+  	{ 
+    background-position: 
+		center center,
+		20% 80%,
+		80% 80%,
+		400px 20%;
+	}
+  }
 
 a
 {
