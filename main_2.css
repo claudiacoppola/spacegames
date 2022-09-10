@@ -97,8 +97,29 @@ body
 
 a
 {
-	font-size:10px;
-	color:#00bcd5;
+	color:black;
+	background:none;
+	text-decoration:none;
+}
+
+a::-moz-selection
+{
+	color:black;
+	background:none;
+	text-decoration:none;
+}
+
+a::-webkit-selection
+{
+	color:black;
+	background:none;
+	text-decoration:none;
+}
+
+a::selection
+{
+	color:black;
+	background:none;
 	text-decoration:none;
 }
 
