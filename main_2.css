@@ -14,7 +14,7 @@ body
 	align-items:center;
 	flex-direction:column;
 	justify-content:center;
-    background:url(src/image7.jpg) no-repeat center;
+    background:url(src/image12.png) no-repeat center;
     background-size:cover;
 }
 
@@ -60,21 +60,23 @@ body
 	display:flex;
 	background:
 	url(src/image7.png) no-repeat center, /*background*/
-	url(src/image9.gif) no-repeat center, /*music*/
-	url(src/image10.png) no-repeat center, /*chair*/
-	url(src/image8.png) no-repeat center; /*ballon*/
-	background-color: rgba(0, 0, 0, 0.2);
+	url(src/image7.gif) no-repeat center, /*music*/
+	url(src/image10.png) no-repeat center, /*tv*/
+	url(src/image13.gif) no-repeat center fixed, /*channel*/
+	url(src/image14.gif) no-repeat center fixed; /*zep*/
+	
 	background-size:
-	cover,
-	100px 150px,
-	70px 100px,
-	70px 100px;
-		
-	background-position:  
+		cover,
+		90px 90px,
+		80px 70px,
+		90px 70px,
+		80px 100px;
+	background-position: /*el primer valor mueve horizontal y el segundo vertical*/
     	center center,
-		20% 80%,
-		80% 80%,
-	100px 20%;
+		20% 92%,
+		70% 100%,
+		85% 93%, 
+		100px 12%; 
     	
 	animation: 6s logo infinite alternate;
 	opacity:0.8;
@@ -84,11 +86,12 @@ body
 {
   100%
   	{ 
-    background-position: 
+    background-position: /*el primer valor mueve horizontal y el segundo vertical*/
 		center center,
-		20% 80%,
-		80% 80%,
-		400px 20%;
+		20% 92%,
+		70% 100%,
+		85% 93%,
+		250px 12%;
 	}
   }
 
