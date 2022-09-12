@@ -13,9 +13,9 @@ body
 	display:flex;
 	align-items:center;
 	flex-direction:column;
-	justify-content:center;
-    background:url(src/image12.png) no-repeat center;
-    background-size:cover;
+
+	background:url(src/image15.png) no-repeat center;
+	background-size:45vh 100vh;
 }
 
 @font-face
@@ -30,17 +30,6 @@ body
 	src:url(fonts/stampwriter.ttf);
 }
 
-.menu
-{
-	width:100vw;
-	height:100vh;
-	display:flex;
-	align-items:center;
-	flex-direction: column;
-	justify-content: center;
-
-}
-
 .options
 {
 	cursor:pointer;
@@ -50,73 +39,10 @@ body
 
 .options:hover
 {
-	font-size:20px;
+	font-size:18px;
 }
-
-.mobile-containerA
-{
-	width:100vw;
-	height:100vh;
-	display:flex;
-	background:
-	url(src/image7.png) no-repeat center, /*background*/
-	url(src/image7.gif) no-repeat center, /*music*/
-	url(src/image10.png) no-repeat center, /*tv*/
-	url(src/image13.gif) no-repeat center fixed, /*channel*/
-	url(src/image14.gif) no-repeat center fixed; /*zep*/
-	
-	background-size:
-		cover,
-		90px 90px,
-		80px 70px,
-		90px 70px,
-		80px 100px;
-	background-position: /*el primer valor mueve horizontal y el segundo vertical*/
-    	center center,
-		20% 92%,
-		70% 100%,
-		85% 93%, 
-		100px 12%; 
-    	
-	animation: 6s logo infinite alternate;
-	opacity:0.8;
-}
-
-@keyframes logo
-{
-  100%
-  	{ 
-    background-position: /*el primer valor mueve horizontal y el segundo vertical*/
-		center center,
-		20% 92%,
-		70% 100%,
-		85% 93%,
-		250px 12%;
-	}
-  }
 
 a
-{
-	color:black;
-	background:none;
-	text-decoration:none;
-}
-
-a::-moz-selection
-{
-	color:black;
-	background:none;
-	text-decoration:none;
-}
-
-a::-webkit-selection
-{
-	color:black;
-	background:none;
-	text-decoration:none;
-}
-
-a::selection
 {
 	color:black;
 	background:none;
