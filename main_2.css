@@ -1,53 +1,142 @@
-* 
-{
+* {
   margin:0;
   padding:0;
   overflow:hidden;
   font-family:stampwriter;
 }
 
-body
-{
+body{
 	width:100vw;
 	height:100vh;
 	display:flex;
 	align-items:center;
-	flex-direction:column;
-
-	background:url(src/image15.png) no-repeat center;
-	background-size:45vh 100vh;
+	justify-content:center;
 }
 
-@font-face
-{
-	font-family:ubuntuFS;
-	src:url(fonts/ubuntu-text.ttf);
-}
-
-@font-face
-{
+@font-face{
 	font-family:stampwriter;
 	src:url(fonts/stampwriter.ttf);
 }
 
-.options
-{
+.options{
 	cursor:pointer;
 	transition:1s;
 	text-align:center;
 }
 
-.options:hover
-{
+.options:hover{
 	font-size:18px;
 }
 
-a
-{
+a{
 	color:black;
 	background:none;
 	text-decoration:none;
 }
 
+.div_bg_night{
+	z-index:2;
+	max-width: 480px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height: 100%;
+}
+
+.div_bg_menu{
+	
+	max-width:480px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position: absolute;
+	z-index:20;
+	height: 100%;
+	
+}
+
+.mobile-container
+{
+	overflow:hidden;
+	height:100%;
+	max-width:480px;
+	
+}
+
+#button{
+	width:60px;
+	height:60px;
+	background:url(src/play-icon.png) no-repeat center;
+	background-size: 60px 60px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:absolute;
+	z-index:1000;
+	opacity:0.9;
+}
+
+
+img{
+	max-width:100%;
+}
+
 @media (orientation:landscape){body{flex-direction:column;}}
 @media (orientation: portrait){body{flex-direction:column;}} 
+
+#rains{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position: absolute;
+	width: 480px;
+	height: 100vh;
+	z-index:1;
+	animation:color-change 10s linear infinite;
+	animation-delay: 1s;
+}
+
+#rains:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(
+https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.png);
+	animation: rain 0.7s linear infinite;
+	opacity: 0;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+/* just changing the position of image 
+of rain using keyframes*/
+@keyframes rain {
+	0% {
+		background-position: 0 0;
+		opacity: 1;
+	}
+
+	100% {
+		background-position: 8% 80%;
+		opacity: 1;
+	}
+}
+/* applying filter at different angle
+on diffrent interval using keyframe*/
+@keyframes color-change {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+
+ 

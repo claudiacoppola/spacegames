@@ -9,8 +9,8 @@
     <title>Menu-SpaceGames</title>
 </head>
 <body>
-    <article class="mobile-containerA">
-		<div class="menu">
+    
+		<!-- <div class="menu">
             <div class="options">
                 <br>
                 <br>
@@ -41,10 +41,39 @@
                 <br>
                 <img src="src/image11.png" height="10" width="50" style="transform:scaleY(-1);">
             </div>
+        </div> -->
+        <div onclick="Play()" id="button" title="♬ Activate Sound ♬"></div>
+    <audio id="rain_sound" src="sound/rain2.mp3" autoplay loop> 
+           
+    </audio>
+       
+        <div class="mobile-container">
+            <div>
+            <img src="src/bg_menu.png" class="div_bg_menu">
+       
+        <div id="rains">
         </div>
-    </article>
-<footer>
-    
-</footer>
+            <div>
+                <img src="src/bg_night.gif" class="div_bg_night">
+            </div> </div>
+            <script>
+                var audio =document.getElementById("rain_sound");
+                var btn = document.getElementById("button");
+
+                function Play(){
+                    if(audio.paused){
+                        audio.play();
+                        btn.style.background="url(src/play-icon.png)";
+                         btn.style.backgroundSize = "60px 60px";
+                         btn.style.backgroundPosition = "center";
+                    }
+                    else{
+                        audio.pause();
+                        btn.style.background = "url(src/stop-icon.png)";
+                        btn.style.backgroundSize = "60px 60px";
+                        btn.style.backgroundPosition = "center";
+                    }
+                }
+            </script>
 </body>
 </html>
