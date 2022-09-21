@@ -119,21 +119,21 @@ img{
 @media screen and (max-width:480px)
 {
 	#cat{
-		position: absolute;
+		position: fixed;
 		margin-top:-6%;
 		margin-left:18%;
 		z-index:800;
 	}
 	
 	#plant1{
-		position: absolute;
+		position: fixed;
 		margin-top:-12%;
 		margin-left:-21.8%;
 		z-index:800;
 	}
 	
 	#pot{
-		position: absolute;
+		position: fixed;
 		margin-top:73%;
 		margin-left:-6%;
 		z-index:800;
