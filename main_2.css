@@ -80,6 +80,34 @@ a{
 	cursor:pointer;
 }
 
+#cat{
+	position: absolute;
+	margin-top:-1.2%;
+	margin-left:6.8%;
+	z-index:800;
+}
+
+#plant1{
+	position: absolute;
+	margin-top:-4%;
+	margin-left:-6.7%;
+	z-index:800;
+}
+
+#pot{
+	position: absolute;
+	margin-top:24.5%;
+	margin-left:-2%;
+	z-index:800;
+}
+#cup{
+	position: absolute;
+	margin-top:25.2%;
+	margin-left:2%;
+	z-index:800;
+}
+
+
 
 img{
 	max-width:100%;
@@ -87,6 +115,37 @@ img{
 
 @media (orientation:landscape){body{flex-direction:column;}}
 @media (orientation: portrait){body{flex-direction:column;}} 
+
+@media screen and (max-width:480px)
+{
+	#cat{
+		position: absolute;
+		margin-top:-6%;
+		margin-left:18%;
+		z-index:800;
+	}
+	
+	#plant1{
+		position: absolute;
+		margin-top:-12%;
+		margin-left:-21.8%;
+		z-index:800;
+	}
+	
+	#pot{
+		position: absolute;
+		margin-top:73%;
+		margin-left:-6%;
+		z-index:800;
+	}
+	#cup{
+		position: absolute;
+		margin-top:75%;
+		margin-left:5%;
+		z-index:800;
+		transform: scaleX(-1);
+	}
+}
 
 #rains{
 	display:flex;
